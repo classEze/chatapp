@@ -8,7 +8,8 @@ app.use(express.static('public'))
 const PORT=process.env.port || 2020;
 
 app.get('/',(req,res)=>{
-  res.sendFile(`${__dirname}/index.html`)
+  // res.sendFile(`${__dirname}/index.html`)
+  res.send('Wetin naa')
 })
 
 //Create the socket Server
