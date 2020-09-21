@@ -5,7 +5,7 @@ const io=require('socket.io');
 app.use(express.static('public'))
 
 
-const PORT=process.env.PORT || 2020
+const PORT=process.env.port || 2020
 //Create the socket Server
 const server=http.createServer(app)
 const socketServer=io(server);
