@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket dot io</title>
+    <link rel="stylesheet" href="styles.css">   
+</head>
+<body>
+  <div class="container">
+    <div class="chat_head">
+         Welcome to Chattie!! 
+         <p> Chatting on the web hasn't been more fun!!!!</p>
+        </div> 
+        <div class="chat_window">
+        </div>
+        <p class='typing_message'></p>
+        <div class="message_form">
+            <input class='input moniker' style='color:white' placeholder=" Enter Your Moniker" type="text" disabled required>
+            <input class='input message' placeholder=" Enter Message to send" type="text"  onkeypress="typing_function()">
+            <input type="button" class='send_button' value="Send" onclick="send_function()">
+        </div>
+     </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/main.js"></script>
+
+</body>
+</html>
